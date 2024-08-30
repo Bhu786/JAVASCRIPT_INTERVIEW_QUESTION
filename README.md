@@ -81,3 +81,333 @@ async/await, and other features.
 
 ---
 
+
+
+## Q1. Add two Numbers 
+You are provided with two numbers A and B. Your task is to add these two numbers. 
+Note: You have to complete AddTwoNumbers function. No need to take any input. 
+Input Format 
+The first line contains two integers A and B. 
+Output Format = Return the result after adding two numbers. 
+Constraints 
+1≤A, B≤5001≤, ≤500 
+Example 
+Sample Input 
+2 5 
+Sample Output 
+7 
+
+
+```javascript
+
+   let a=10;
+   let b=20;
+   function AddTwoNumbers() {
+    let sum = a + b;
+    return sum;
+    }
+    console.log(AddTwoNumbers());
+
+
+
+```
+
+
+
+
+
+
+
+## Q2. Find if the conditions are obeyed or not? 
+You are given two number first as A  and second as B  and check if both conditions 
+(A<10 <10 and A>B > ) are satisfied or not with the help of operators. 
+Note: You have to complete Is_Valid function. No need to take any input. 
+Input Format 
+The first line contains two integers A  and B . 
+Output Format 
+Return the result as true if the given condition gets satisfied, else false. 
+Constraints 
+1≤A,B≤5001≤ , ≤500 
+Example 
+Sample Input 
+5 3 
+Sample Output 
+True 
+
+
+
+
+```javascript
+
+   let a=10;
+   let b=20;
+   function Is_Valid() {
+    if(a>10&&a>b){
+        return true;
+    }
+   }
+   consloe.log(Is_Valid());
+
+
+```
+
+
+
+
+
+
+
+
+## Q3.Check the conditions 
+You are given two numbers A  and B . You need to do the following checks: 
+1. 
+if both are divisible by 10 console true. 
+2. 
+3. 
+if both are not divisible by 10 console false. 
+if one of them only is divisible by 10 console true. 
+Use operator to do this. 
+Note: You have to complete Check function. No need to take any input. 
+Input Format 
+The first line contains two natural numbers A  and B . 
+Output Format 
+Return the required result. 
+Constraints 
+1≤A,B≤100001≤ , ≤10000 
+Example 
+Sample Input 
+12 20 
+Sample Output 
+true 
+
+
+
+```javascript
+
+   let a=10;
+   let b=60;
+
+   function check(){
+    if((a%10==0 && b%10==0){
+        return true;
+    }else{
+        return false;
+    }
+   }
+
+
+  console.log(check());
+
+```
+
+
+
+## Q4.Find the first digit of a 4 digit number 
+You are provided a four digit number N only. Your task is to print out the first digit of that 
+number. 
+Note: You have to complete First_Digit function. No need to take any input. 
+Input Format 
+The first line contains one four digit natural number N . 
+Output Format 
+Return the required result. 
+Constraints 
+1000≤N≤99991000≤ ≤9999 
+Example 
+Sample Input 
+4567 
+Sample Output 
+4 
+
+
+
+```javascript
+
+   var number =6273;
+
+   function first_digit(){
+
+    while(number){
+          number=number/10;
+          if(number>0&&number<9){
+            return number;
+          }
+
+
+    }
+
+    console.log(number);
+
+   }
+
+
+```
+
+
+## Q5.Find the last digit of a 4 digit number 
+You are provided a four digit number N only. Your task is to print out the last digit of that 
+number. 
+Note: You have to complete Last_Digit function. No need to take any input. 
+Input Format 
+The first line contains one four digit natural number N . 
+Output Format 
+Return the required result. 
+Constraints 
+1000≤N≤99991000≤ ≤9999 
+Example 
+Sample Input 
+4567 
+Sample Output 
+7 
+
+
+```javascript
+
+   
+   var number =6273;
+
+   function first_digit(){
+
+    while(number){
+          number=number/10;
+         
+    }
+    console.log(number);
+
+   }
+
+
+
+
+
+
+```
+
+
+
+
+## Q6.Find the remainder 
+You are provided with two numbers A  and B  where A  as divisor and B  as dividend.Your 
+task is find the remainder. 
+Note: You have to complete Find_the_remainder function. No need to take any input. 
+Input Format 
+The first line of the input contains two integers A  and B . 
+Output Format 
+Return the result after finding the remainder. 
+Constraints 
+1≤A,B≤10001≤ , ≤1000 
+Example 
+Sample Input 
+2 9 
+Sample Output 
+1 
+
+
+```javascript
+
+   
+   let a=25;
+   let b=5;
+
+   function remainder(){
+    return a%b;
+   }
+   console.log(remainder);
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+## Q7.Multiply two Numbers 
+You are provided with two numbers A  and B . Your task is to multiply these two numbers. 
+Note: You have to complete Multiply_two_number function. No need to take any input. 
+Input Format 
+The first line contains two integers A  and B . 
+Output Format 
+Return the result after multiplying two numbers. 
+Constraints 
+1≤A,B≤301≤ , ≤30 
+Example 
+Sample Input 
+2 5 
+Sample Output 
+10 
+
+```javascript
+
+  let a=10;
+  let b=20;
+
+  function multiply(){
+    return a*b;
+  }
+   
+   console.log(multiply);
+
+
+```
+## Q8. Marks Calculator 
+Shyam has got his marks in three subjects as A , B , and C  (out of 100).Write a program to 
+calculate his total marks and his average. 
+Note: You have to complete Sum and Average functions. No need to take any input. 
+Input Format 
+The input contains three numbers A , B  and C . 
+Output Format 
+Return the required result. 
+Constraints 
+0≤A,B,C≤1000≤ , , ≤100 
+Example 
+Sample Input 
+50 20 100 
+Sample Output 
+170 56.67
+
+
+```javascript
+
+   let a=10;
+   let b=20;
+   let c=30;
+
+   function average(){
+    let avg=(a+b+c)/3;
+    return avg;
+   }
+
+   console.log(average());
+
+
+```
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
