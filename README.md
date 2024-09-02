@@ -393,7 +393,266 @@ Sample Output
 ---
 
 
+## Q1.Find Grades 
+Your school has the following grading system based upon the marks (M) obtained by a student: 
+ If M≤10, the grade will be E. 
+ If 11≥M≤20, the grade will be D. 
+ If 21≥M≤30, the grade will be C. 
+ If 31≥M≤40, the grade will be B. 
+ If 41≥M≤50, the grade will be A. 
 
+```javascript
+
+
+
+let grades=5;
+
+switch(true){
+    case 41<grades&&grades<50:
+        console.log("A");
+        break;
+    
+    case 31<grades&&grades<40:
+        console.log("B");
+        break;
+     
+    case 21<grades&&grades<30:
+        console.log("C");
+        break;
+     
+    case 11<grades&&grades<20:
+        console.log("D");
+        break;
+    
+    case grades>0&&grades<10:
+        console.log("E");
+        break;
+    default:
+        console.log("invalid");
+
+}
+
+
+
+   
+
+
+```
+
+
+## Your friend will enter his marks out of 5050, and your task is to print his grades using a switch statement. 
+Note: You have to complete findGrades function. No need to take any input. 
+Input Format 
+The first and the only line of the input contain an integer M, representing the marks that your friend will enter in the grading system. 
+Output Format 
+Return the grade obtained by your friend. 
+Constraints 
+0≤M≤50 
+Example 
+Sample Input 
+1 
+Sample Output 
+E 
+```javascript
+   
+
+
+
+let grades=5;
+
+switch(true){
+    case 41<grades&&grades<50:
+        console.log("A");
+        break;
+    
+    case 31<grades&&grades<40:
+        console.log("B");
+        break;
+     
+    case 21<grades&&grades<30:
+        console.log("C");
+        break;
+     
+    case 11<grades&&grades<20:
+        console.log("D");
+        break;
+    
+    case grades>0&&grades<10:
+        console.log("E");
+        break;
+    default:
+        console.log("invalid");
+
+}
+
+
+
+
+
+
+   
+
+
+```
+## Q2. Get Value 
+You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the 
+table corresponding to an input character and return it. 
+| P or p - PrepBytes | 
+| Z or z - Zenith |  
+| E or e - Expert Coder |  
+| D or d - Data Structure | 
+Note: You have to complete getValue function. No need to take any input. 
+Input Format 
+The first and the only line of the input contain a character C, representing the character that you will get in input. 
+Output Format 
+Return the value corresponding to the input character. 
+Constraints 
+C will be one of the following characters: [P, p, Z, z, E, e, D, d]. 
+Example 
+Sample Input 
+E 
+Sample Output 
+Expert Coder 
+```javascript
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+
+
+## Q3. Find the maximum out of three numbers. 
+Take three numbers and print the largest number among them if all of three are same print −1−1. 
+Note: You have to complete Max_out_of_three. No need to take any input. 
+Input Format 
+The input contains three numbers A, B and C. 
+Output Format 
+Return the maximum number out of the three numbers as result. 
+Constraints 
+1≤A, B, C≤10000 
+Example 
+Sample Input 
+2 5 4 
+Sample Output 
+```javascript
+
+   
+
+
+let a=10;
+let b=20;
+let c=30;
+let max = Math.max(a, b, c);
+console.log(max);
+
+
+
+
+
+
+
+
+```
+5 
+## Q4. Second Smallest 
+You are given 33 distinct integers X, Y and Z and your task is to find and return the second smallest integer among the three provided 
+integers. 
+Note: You have to complete findSndSmallest function. No need to take any input. 
+Input Format 
+The first and the only line of the input contains three space-separated integers X, Y, and Z, denoting the integers among which you 
+have to find the second smallest element. 
+Output Format 
+Return the second smallest integer among the three integers given to you. 
+Constraints 
+1≤X, Y, Z≤500 
+X! =Y! =, Y!=Z!=, X!=Z 
+Example 
+Sample Input 
+2 9 23 
+Sample Output 
+9 
+```javascript
+
+   
+
+let a=10;
+let b=20;
+let c=30;
+
+
+
+
+
+
+
+
+
+
+
+```
+
+## Q5. Check whether the triangle is Acute or Obtuse 
+Write a program takes takes three angles and checks whether the triangle is acute or obtuse. 
+Note: You have to complete Triangle_Check. No need to take any input 
+Input Format 
+The input contains three numbers A, B and C which denotes the angles of a triangle. 
+Output Format 
+Return the required result. 
+Constraints 
+0≤A, B, C≤180 
+Example 
+Sample Input 
+60 100 20 
+Sample Output
+
+```javascript
+
+   function classifyTriangle(a, b, c) {
+    // Sort the sides so that a <= b <= c
+    let sides = [a, b, c].sort((x, y) => x - y);
+    let [x, y, z] = sides;
+
+    // Square the lengths of the sides
+    let x2 = x * x;
+    let y2 = y * y;
+    let z2 = z * z;
+
+    // Compare the sums of squares
+    if (x2 + y2 > z2) {
+        return "Acute";
+    } else if (x2 + y2 === z2) {
+        return "Right";
+    } else {
+        return "Obtuse";
+    }
+}
+
+
+
+ 
+
+
+
+
+```
+---
+---
+---
 
 
 
